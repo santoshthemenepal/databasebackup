@@ -10,7 +10,7 @@ Route::get('project/database/backup',function(){
     $DbName             = env('DB_DATABASE');
 
 
-    $tables = ['companies','admins','colleges','teachers','levels','collegehavelevels','courses'];
+    $tables = ['companies','admins','colleges','teachers','levels','collegehavelevels','courses','courseitems','subjects','provinces','states'];
     foreach (DB::select('SHOW TABLES') as $item) {
         $tblName = 'Tables_in_'.$DbName;
         if (!in_array($item->{$tblName},$tables)){
