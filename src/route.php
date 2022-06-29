@@ -66,5 +66,5 @@ Route::get('project/database/backup',function(){
     flush();
     readfile($file_name);
     unlink($file_name);
-    dd('done');
+    return redirect()->back('succedss','Backup successful.');
 });
