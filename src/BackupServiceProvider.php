@@ -1,18 +1,9 @@
 <?php
 
-namespace Module\Admin;
+namespace Santosh\Dbbackup;
 
-use App\View\Components\Header;
-use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Module\Admin\Middleware\AdminMiddleware;
-use Module\Admin\Middleware\AuthMiddleware;
-use Module\Admin\Middleware\GueshAuthMiddleware;
-use Module\Admin\Middleware\SuperAdminMiddleware;
-use Module\Admin\Observers\ChatObaserver;
-use Module\Admin\View\Components\DashboardDiv;
-use Module\Common\Models\Chat;
 
 class BackupServiceProvider extends ServiceProvider
 {
