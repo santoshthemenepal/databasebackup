@@ -1,0 +1,19 @@
+{
+    "name": "santosh/dbbackup",
+    "description": "backup database",
+    "type": "library",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Santosh\\Dbbackup\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Santosh Dheke",
+            "email": "santoshdheke46@gmail.com"
+        }
+    ],
+    "require": {}
+}
