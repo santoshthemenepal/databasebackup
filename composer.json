@@ -15,5 +15,12 @@
             "email": "santoshdheke46@gmail.com"
         }
     ],
+    "extra": {
+    "laravel": {
+      "providers": [
+        "Santosh\\Dbbackup\\BackupServiceProvider"
+      ]
+    }
+  },
     "require": {}
 }
