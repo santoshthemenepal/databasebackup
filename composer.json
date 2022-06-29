@@ -1,5 +1,5 @@
 {
-    "name": "santosh/dbbackup",
+    "name": "ssgroup/dbbackup",
     "description": "backup database",
     "type": "library",
     "minimum-stability": "dev",
