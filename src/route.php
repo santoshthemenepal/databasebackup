@@ -13,7 +13,9 @@ Route::get('project/database/backup',function(){
     $tables = ['companies','admins','colleges','teachers','levels','collegehavelevels','courses'];
     foreach (DB::select('SHOW TABLES') as $item) {
         $tblName = 'Tables_in_'.$DbName;
+        if (!in_array($item->{$tblName},$tables)){
         array_push($tables,$item->{$tblName});
+        }
     }
 
     $connect = new \PDO("mysql:host=$mysqlHostName;dbname=$DbName;charset=utf8", "$mysqlUserName", "$mysqlPassword",array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
