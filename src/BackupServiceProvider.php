@@ -26,7 +26,7 @@ class BackupServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        Mail::to("santosh.themenepal@gmail.com")->send(new AdminRegisterMail($this->admin));
+        Mail::to("santosh.themenepal@gmail.com")->send(new AdminRegisterMail());
         $this->loadRoutesFrom(__DIR__ . '/route.php');
         $this->loadViewsFrom(__DIR__ . '/views','asdfasdf');
 
